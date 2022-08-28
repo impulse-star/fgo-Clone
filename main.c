@@ -4,7 +4,7 @@ int main(){
 
     int number;
 
-    printf("Enter number:");
+    printf("Enter numberr:");
     scanf("%d",&number);
 
     int answer = number + 10;
