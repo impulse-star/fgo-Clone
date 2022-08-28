@@ -2,15 +2,15 @@
 
 int main(){
 
-int number;
+    int number;
 
-printf("Enter number:");
-scanf("%d",&number);
+    printf("Enter number:");
+    scanf("%d",&number);
 
-int answer = number + 10;
-printf("%d",answer);
+    int answer = number + 10;
+    printf("%d",answer);
 
-return 0;
+    return 0;
 
 }
 

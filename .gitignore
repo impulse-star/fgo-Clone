@@ -50,12 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-<<<<<<< HEAD
-main
-.vscode/c_cpp_properties.json
-.gitignore
-=======
 .vscode/c_cpp_properties.json
 .vscode/launch.json
->>>>>>> e2f5dfe290ba3ce1df62380ceec88b321b12754b
 .vscode/tasks.json
