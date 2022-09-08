@@ -1,83 +1,78 @@
 #include <stdio.h>
 
-int main(){ /*
-
-struct char1;
-struct enem1;
-struct enem2;
-struct enem3;
-struct target_index = enem1;
-
-struct character{
+typedef struct {
     int atk;
     int hp;
     int crit_chan;
-}char1, enem1;
+} character;
 
-int random_gen(int lower_bnd, int upper_bnd){
-    
+double crit_bool = 1;
+
+int random_gen(int lower_bnd, int upper_bnd) {
+
+    // for now, we will make it spit out the same number to make it easier to debug,
+    // feel free to comment out the bottom line when you want to make it a real rng generator.
     srand(time(0));
-    int prob = rand() % (upper - lower + 1)) + lower;
+    int prob = (rand() % (upper_bnd - lower_bnd + 1)) + lower_bnd;
     return prob;
-    
+
 }
 
-int crit_gen(int crit_chan, int crit_mult){
-    
+double crit_gen(int crit_chan, int crit_mult) {
+
     int crit_pick = random_gen(1, 10);
-    
+
     if (crit_pick <= crit_chan)
         crit_bool = 1.5;
-        **replace 1.5 with crit_mult to customize critical multiplier**
+    // **replace 1.5 with crit_mult to customize critical multiplier * *
     else
         crit_bool = 1;
-        
+
     return crit_bool;
-    
+
 }
 
-void atk_single(struct char1, struct enem1, int crit_chan) {
-    
+void atk_single(character char1, character enem1, int crit_chan) {
+
     int atk_mult = random_gen(-350, 350);
-    
-    int damage = char1.atk * (1.0 + atk_mult/1000) * crit_bool;
+
+    int damage = char1.atk * (1.0 + atk_mult / 1000) * crit_bool;
     enem1.hp = enem1.hp - damage;
-    
-    return 0;
 }
 
-void target_switch(){
-    
-    if(enem1.hp > 0){
+/* i have no clue what is past this.
+void target_switch() {
+
+    if (enem1.hp > 0) {
         target_index = enem1;
     }
-    else if(enem2.hp > 0){
+    else if (enem2.hp > 0) {
         target_index = enem2;
     }
-    else if(enem3.hp > 0){
+    else if (enem3.hp > 0) {
         target_index = enem3;
     }
-    else{
+    else {
         battle_end();
     }
-    
+
 }
 
-void player_turn(){
-    
-    atk_single(char1, target_index);
-    target_switch();
-    atk_single(char1, target_index);
-    target_switch();
-    atk_single(char1, target_index);
-    target_switch();
-    
-}
+void player_turn() {
 
+    atk_single(char1, target_index);
+    target_switch();
+    atk_single(char1, target_index);
+    target_switch();
+    atk_single(char1, target_index);
+    target_switch();
+
+}
 */
 
-    printf("hello world");
+int main(){
+    printf("Program Runs successfully!");
 
-
+    return 0;
 }
 
