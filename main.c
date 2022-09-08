@@ -10,7 +10,9 @@ int main(){
     int answer = number + 10;
     printf("%d",answer);
 
-    printf("suck my dick");
+    printf("Test can you hear me");
+    printf("Even more testing!");
+    printf("Does this even work?");
 
     return 0;
 
