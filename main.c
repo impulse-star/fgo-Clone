@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(){
+int main(){ /*
 
 struct char1;
 struct enem1;
@@ -74,7 +74,9 @@ void player_turn(){
     
 }
 
+*/
 
+    printf("hello world");
 
 
 }
